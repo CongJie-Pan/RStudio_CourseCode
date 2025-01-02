@@ -515,6 +515,8 @@ x<-function(n){
 }
 x(5)
 
+# s ==3 永遠不會成立，所以等於2:5累加 = 14
+
 # 7.
 x<-function(n){
   x1<-c(0)
@@ -529,7 +531,7 @@ x(5)
 x<-function(n){
   x1<-c(0)
   for (i in 2:n){
-    if(i%%2==0) x1<-c(x1,i)
+    if(i%%2==0) x1<-c(x1,i) # 0 2 4
   }
   return(x1)
 }
@@ -539,7 +541,7 @@ x(5)
 k<-c(0)
 for (i in 4:5){
   l<-c(i*(i+1))
-  k<-c(k,l)
+  k<-c(k,l) # 0 20 30
 }
 print(k)
 
